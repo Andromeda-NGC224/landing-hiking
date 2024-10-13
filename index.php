@@ -2,7 +2,11 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+     <link rel="icon" type="image/svg+xml" href="./public/icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="no-transform" />
+<meta http-equiv="Cache-control" content="no-cache" />
+<meta name="google" content="nopagereadaloud" />
     <title>Преміум спорядження для походів та активного відпочинку</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -138,7 +142,7 @@
             <div class="modal-form-container">
             <label class="modal-form-label-name" for="user-name-form">Ім'я</label>
             <div class="modal-form-label-name-container">
-            <input required type="text" id="user-name-form" name="user-name-form" autofocus="" class="modal-form-label-input">
+            <input required type="text" id="user-name-form" name="user-name-form" class="modal-form-label-input">
             <svg width="18" height="24" class="modal-form-label-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path  width="100%" height="100%" stroke-width="2" d="M16,12 C18.3736719,13.1826446 20,15.6506255 20,19 L20,23 L4,23 L4,19 C4,15.6457258 5.6310898,13.1754259 8,12 M12,13 C15.3137085,13 18,10.3137085 18,7 C18,3.6862915 15.3137085,1 12,1 C8.6862915,1 6,3.6862915 6,7 C6,10.3137085 8.6862915,13 12,13 Z M18,7 C16.5,7 15,7.3599999 13,5 C11,7.3599999 8.5,8 6,7 M7,13 L12.0249378,18.2571942 L17,13 M12,18 L12,23"></path></svg>
             </div>
             </div>
@@ -194,7 +198,7 @@
         <div class="modal-form-container">
           <label class="modal-form-label-name" for="user-name">Ім'я</label>
           <div class="modal-form-label-name-container">
-            <input required type="text" id="user-name" name="user-name" autofocus="" class="modal-form-label-input">
+            <input required type="text" id="user-name" name="user-name" class="modal-form-label-input">
             <svg width="18" height="24" class="modal-form-label-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path  width="100%" height="100%" stroke-width="2" d="M16,12 C18.3736719,13.1826446 20,15.6506255 20,19 L20,23 L4,23 L4,19 C4,15.6457258 5.6310898,13.1754259 8,12 M12,13 C15.3137085,13 18,10.3137085 18,7 C18,3.6862915 15.3137085,1 12,1 C8.6862915,1 6,3.6862915 6,7 C6,10.3137085 8.6862915,13 12,13 Z M18,7 C16.5,7 15,7.3599999 13,5 C11,7.3599999 8.5,8 6,7 M7,13 L12.0249378,18.2571942 L17,13 M12,18 L12,23"></path></svg>
           </div>
         </div>
@@ -226,6 +230,15 @@
         </div>
         <button type="submit" class="modal-form-button">Замовити</button>
       </form>
+    </div>
+  </div>
+
+  <div class="modal-container-green">
+    <div class="modal-container-window-green">
+      <button class="modal-button-close status-close" type="button">
+        <svg class="modal-button-close-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path width="100%" height="100%" fill="none" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"></path><path width="100%" height="100%" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 320 192 192m0 128 128-128"></path></svg>
+      </button>
+      <h3 class="modal-container-window-status-text">Дякую за замовлення!</h3>
     </div>
   </div>
 

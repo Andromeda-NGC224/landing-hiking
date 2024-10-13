@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalBtnClose = document.querySelector(".modal-button-close");
   const formModal = document.querySelector(`.modal-form`);
   const formContacts = document.querySelector(`.contact-form`);
+  const modalContainerGreen = document.querySelector(`.modal-container-green`);
+  const modalBtnCloseGreen = document.querySelector(
+    ".modal-container-green .modal-button-close"
+  );
 
   buyBtns.forEach((btn) => {
     btn.addEventListener(`click`, (event) => {
@@ -32,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       formModal.reset();
       modalOrder.classList.remove(`is-open`);
-      alert("DONE!!!!");
+      modalContainerGreen.classList.add(`is-open`);
     }
   });
 
@@ -45,13 +49,15 @@ document.addEventListener("DOMContentLoaded", function () {
       .getElementById("user-comment-form")
       .value.trim();
     const userPrivacy = document.getElementById("user-privacy-form").checked;
-    const formInputTrim = formInput.value.trim();
-    const formInputAreaTrim = formInputArea.value.trim();
     if (!userName || !userPhone || !userEmail || !userComment || !userPrivacy) {
       alert("Заповніть всі поля, будь ласка.");
     } else {
       formContacts.reset();
-      alert("DONE!!!!");
+      modalContainerGreen.classList.add(`is-open`);
     }
+  });
+
+  modalBtnCloseGreen.addEventListener(`click`, () => {
+    modalContainerGreen.classList.remove(`is-open`);
   });
 });
