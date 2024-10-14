@@ -60,4 +60,14 @@ document.addEventListener("DOMContentLoaded", function () {
   modalBtnCloseGreen.addEventListener(`click`, () => {
     modalContainerGreen.classList.remove(`is-open`);
   });
+
+  if (!localStorage.getItem("cookiesAccepted")) {
+    document.getElementById("cookie-notice").style.display = "block";
+  }
+  document
+    .getElementById("accept-cookies")
+    .addEventListener("click", function () {
+      localStorage.setItem("cookiesAccepted", true);
+      document.getElementById("cookie-notice").style.display = "none";
+    });
 });
