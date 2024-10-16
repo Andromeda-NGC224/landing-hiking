@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "src": "/terms-of-use",
+      "dest": "/terms-of-use.html"
+    },
+    {
+      "src": "/privacy-policy",
+      "dest": "/privacy-policy.html"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    }
+  ]
+}
